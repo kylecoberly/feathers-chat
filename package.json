@@ -1,0 +1,57 @@
+{
+  "name": "feathers-chat",
+  "description": "Practice",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "Kyle Coberly",
+    "email": "kyle.coberly@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/"
+  },
+  "engines": {
+    "node": "^8.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run mocha",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "start": "node src/",
+    "dev": "nodemon src/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "dependencies": {
+    "@feathersjs/authentication": "^2.1.6",
+    "@feathersjs/authentication-jwt": "^2.0.1",
+    "@feathersjs/authentication-local": "^1.2.1",
+    "@feathersjs/configuration": "^1.0.2",
+    "@feathersjs/errors": "^3.3.0",
+    "@feathersjs/express": "^1.2.3",
+    "@feathersjs/feathers": "^3.1.6",
+    "@feathersjs/socketio": "^3.2.2",
+    "compression": "^1.7.2",
+    "cors": "^2.8.4",
+    "feathers-knex": "^3.1.1",
+    "helmet": "^3.12.1",
+    "knex": "^0.14.4",
+    "pg": "^7.4.1",
+    "serve-favicon": "^2.4.5",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "feathers-memory": "^2.1.2",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.17.5",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  }
+}
